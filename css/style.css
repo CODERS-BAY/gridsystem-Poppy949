@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box; 
+
+}
+
+:root {
+    --primary : rgb(58, 36, 4);
+    --secondary: rgb(240, 221, 193);
+    --tertiary: rgb(117, 75, 12);
+    
+}
+
+ 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    
+}
+/*---Header*/
+
+
+
+nav a {
+    color: var(--secondary);
+}
+nav ul {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    padding: 0 10px;
+    text-decoration: none;
+    
+}
+
+header {
+    background-color: var(--primary) ;
+    display: flex;
+    padding: 20px;
+}
+
+
+header .row {
+    justify-content: space-between;
+}
+
+#frontpage {
+    max-width: 100%;
+    background-image: url('../images/Bilder/frontpage.jpg') ;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.col-4 {
+    text-align: center;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+button:hover {
+    background-color: var(--tertiary);
+    cursor: pointer;
+
+}
+
+
+#hintergrund {
+    background-size: cover;
+    background-image: url('../images/Bilder/hintergrund.jpg');
+    color: var(--secondary);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    padding: 0 10px;
+
+}
+
+footer h3 {
+    padding: 0 10px;
+}
+
+footer .row {
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #logo img {
+       width: 150px;
+   }
+}
+
+@media screen and (max-width: 560px) {
+    header .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
